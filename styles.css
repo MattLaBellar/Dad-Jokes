@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('Dr.Doof.jpg') no-repeat center center/cover;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+.container {
+  background-color: rgba(144, 238, 144, 0.6); /* Lighter Transparent Lime Green */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+  position: relative;
+}
+
+h3 {
+  margin: 0;
+  opacity: 1; /* Make text fully visible */
+  letter-spacing: 2px;
+  font-size: 1.5rem; /* Increased by 50% */
+  color: white; /* Changed to white */
+  font-family: 'Press Start 2P', cursive; /* Fun new font */
+}
+
+.joke {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #9f68e0;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+/* Sticker Styles */
+.sticker {
+  position: absolute;
+  width: 180px; /* Increased size by 80% from original */
+}
+
+/* Move closer to the middle */
+.sticker-bottom-left {
+  bottom: 40px;  /* Adjusted closer */
+  left: 40px;  /* Adjusted closer */
+  transform: rotate(-35deg);
+}
+
+.sticker-top-right {
+  top: 40px;  /* Adjusted closer */
+  right: 40px;  /* Adjusted closer */
+  transform: rotate(25deg);
+}
